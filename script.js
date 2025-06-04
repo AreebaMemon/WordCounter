@@ -49,7 +49,7 @@ upper.addEventListener("click", () => {
   textinput.value = textinput.value.toUpperCase();
 });
 
-capitalize.addEventListener("click", () => {
+
   capitalize.addEventListener("click", () => {
   let text = textinput.value;
   let sentences = text.split(".");
@@ -68,7 +68,4 @@ capitalize.addEventListener("click", () => {
 
   let finalText = sentences.join(".") + (text.trim().endsWith(".") ? "" : ".");
   textinput.value = finalText;
-});
-
- 
 });
