@@ -1,10 +1,13 @@
-
-body {
-    font-family: Arial, sans-serif;
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
     background-color: #F7F9FA; 
-    box-sizing: border-box;
 }
 
 #container{
