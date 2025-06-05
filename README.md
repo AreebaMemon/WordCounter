@@ -11,5 +11,5 @@ A simple yet powerful WordCounter that helps you count words, characters, senten
 * **Character Count:** Measures the total number of characters.
 * **Sentence Count:** Counts the number of sentences.
 * **Vowel Count:** Calculates the total number of vowels (A, E, I, O, U,a,e,i,o,u).
-* **Case Conversion:** Easily switch between lowercase, uppercase, and capitalized formats.
+* **Case Conversion:** Easily switch between lowercase, uppercase formats.
 
