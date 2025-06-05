@@ -2,7 +2,6 @@ let textinput = document.querySelector("#textinput");
 
 let charactercount = document.querySelector("#characterCount");
 let wordcount = document.querySelector("#wordCount");
-let SentenceCount = document.querySelector("#SentenceCount");
 let VowelCount = document.querySelector("#VowelCount");
 
 textinput.addEventListener("input", () => {
@@ -12,9 +11,6 @@ textinput.addEventListener("input", () => {
 
   let countword = text.trim().split(/[\s\.]+/);
   wordcount.innerText = countword.length;
-
-  let sentword = text.trim().split(".").length;
-  SentenceCount.innerText = sentword - 1;
 
   let count = 0;
   for (let i = 0; i < text.length; i++) {
