@@ -39,7 +39,6 @@ textinput.addEventListener("input", () => {
 
 let lower = document.querySelector("#lower");
 let upper = document.querySelector("#upper");
-let capitalize = document.querySelector("#capitalize");
 
 lower.addEventListener("click", () => {
   textinput.value = textinput.value.toLowerCase();
@@ -47,25 +46,4 @@ lower.addEventListener("click", () => {
 
 upper.addEventListener("click", () => {
   textinput.value = textinput.value.toUpperCase();
-});
-
-
-  capitalize.addEventListener("click", () => {
-  let text = textinput.value;
-  let sentences = text.split(".");
-
-  for (let i = 0; i < sentences.length; i++) {
-    sentences[i] = sentences[i].trim();
-    let words = sentences[i].split(" ");
-    for (let j = 0; j < words.length; j++) {
-      if (words[j]) {
-        words[j] =
-          words[j].charAt(0).toUpperCase() + words[j].slice(1).toLowerCase();
-      }
-    }
-    sentences[i] = words.join(" ");
-  }
-
-  let finalText = sentences.join(".") + (text.trim().endsWith(".") ? "" : ".");
-  textinput.value = finalText;
 });
